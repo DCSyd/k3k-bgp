@@ -1,0 +1,11 @@
+defaultNamespace:  frr-k8s
+helm:
+  releaseName: frr-k8s
+  repo: https://metallb.github.io/frr-k8s
+  chart: frr-k8s
+  values: 
+    frrk8s:
+      frr:
+        acceptIncomingBGPConnections: true
+    crds:
+      enabled: true
