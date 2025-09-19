@@ -1,0 +1,20 @@
+##Add additional Host cluster Node IPs as BGP neighbors
+apiVersion: frrk8s.metallb.io/v1beta1
+kind: FRRConfiguration
+metadata:
+  name: bgp-host-cl
+  namespace: frr-k8s
+spec:
+  bgp:
+    routers:
+        prefixes:
+          - 10.10.12.16/28
+---
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: lb-pool
+  namespace: metallb-system
+spec:
+  addresses:
+  - 10.10.12.16/28
