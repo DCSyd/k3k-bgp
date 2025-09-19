@@ -19,7 +19,7 @@ Now any service with loadbalancer IP, in any of the virtual clusters will now be
 
 
 # K3k Clusters up
-
+Fleet is used to deploy frr, metallb and config
 
 
 <img width="642" height="157" alt="image" src="https://github.com/user-attachments/assets/f77d8262-823e-4926-84ce-7445a197903c" />
@@ -27,7 +27,7 @@ Now any service with loadbalancer IP, in any of the virtual clusters will now be
 
 
 # BGP status from Host Cluster
-
+BGP Status towards all k3k nodes is up 
 
 
 <img width="1255" height="501" alt="image" src="https://github.com/user-attachments/assets/ccb3f8cc-5363-477a-9674-59ec3993989a" />
@@ -35,23 +35,23 @@ Now any service with loadbalancer IP, in any of the virtual clusters will now be
 
 
 # IP routes in Host cluster FRR container
-
+Each virtual cluster is advertising own lbs range to host cluster
 
 
 <img width="696" height="427" alt="image" src="https://github.com/user-attachments/assets/f3348903-0792-40cc-8798-0ad891e2d154" />
 
 
 
-# SVC with LBS in virtual cluster vcl3
-
+# Service with LBS in virtual cluster vcl3
+Test app in virtual cluster 3 using loadbalacer IP from its metallb pool
 
 
 <img width="696" height="132" alt="image" src="https://github.com/user-attachments/assets/2381fced-c4ae-4e16-bc23-f5ae5580f9f9" />
 
 
 
-# Curl from vRouter to vcl3 service
-
+# Curl from exter vRouter to vcl3 service
+Now test app in virtual cluster is reachable from external vRouter 
 
 
 <img width="886" height="590" alt="image" src="https://github.com/user-attachments/assets/85125378-b10c-4cef-bbd3-17fcca2dcb65" />
