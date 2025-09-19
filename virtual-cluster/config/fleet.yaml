@@ -1,0 +1,21 @@
+targetCustomizations:
+- name: vcl1
+  clusterSelector:
+    matchLabels:
+      tenant: vcl1
+  kustomize:
+    dir: overlays/vcl1
+
+- name: vcl2
+  clusterSelector:
+    matchLabels:
+      tenant: vcl2
+  kustomize:
+    dir: overlays/vcl2
+
+- name: vcl3
+  clusterSelector:
+    matchLabels:
+      tenant: vcl3
+  kustomize:
+    dir: overlays/vcl3
