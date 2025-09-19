@@ -1,0 +1,19 @@
+###K3k bgp peers- We allowing whole POD CIDR for dynamin BGP so it can cover all k3k cluster within this host cluster
+###Indivisual K3k POD IP can also be added and will required separate peer group for each virtual cluster
+apiVersion: frrk8s.metallb.io/v1beta1
+kind: FRRConfiguration
+metadata:
+  name: k3k-peers
+  namespace: frr-k8s
+spec:
+  raw:
+    rawConfig: |-
+      router bgp 64511
+        neighbor k3k-peers peer-group
+        neighbor k3k-peers remote-as 64512
+        neighbor k3k-peers ebgp-multihop
+        bgp listen range 10.42.0.0/16 peer-group k3k-peers
+        !
+      address-family ipv4 unicast
+        neighbor k3k-peers activate
+        neighbor k3k-peers weight 65535
