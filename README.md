@@ -50,7 +50,7 @@ Test app in virtual cluster 3 using loadbalacer IP from its metallb pool
 
 
 
-# Curl from exter vRouter to vcl3 service
+# Curl from vRouter to vcl3 service
 Now test app in virtual cluster is reachable from external vRouter 
 
 
