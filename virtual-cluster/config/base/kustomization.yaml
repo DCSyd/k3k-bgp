@@ -1,0 +1,2 @@
+resources:
+- bgp-metallb-conf.yaml
