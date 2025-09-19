@@ -1,4 +1,4 @@
 resources:
-- ../../config
+- ../../base
 patches:
 - bgp-metallb-conf.yaml
