@@ -1,4 +1,4 @@
-# k3k-bgp
+# k3k-bgp overview
 BGP routing for k3k virtual mode clusters.
 Host cluster is RKE2 cluster with Calico CNI.
 
@@ -18,7 +18,7 @@ Now any service with loadbalancer IP, in any of the virtual clusters will now be
 
 
 
-#K3k Clusters
+# K3k Clusters up
 
 
 
@@ -26,7 +26,7 @@ Now any service with loadbalancer IP, in any of the virtual clusters will now be
 
 
 
-#BGP status from Host Cluster
+# BGP status from Host Cluster
 
 
 
@@ -34,7 +34,7 @@ Now any service with loadbalancer IP, in any of the virtual clusters will now be
 
 
 
-#IP routes in Host cluster FRR container
+# IP routes in Host cluster FRR container
 
 
 
@@ -42,7 +42,7 @@ Now any service with loadbalancer IP, in any of the virtual clusters will now be
 
 
 
-#SVC with LBS in virtual cluster vcl3
+# SVC with LBS in virtual cluster vcl3
 
 
 
@@ -50,7 +50,7 @@ Now any service with loadbalancer IP, in any of the virtual clusters will now be
 
 
 
-#Curl from vRouter to vcl3 service
+# Curl from vRouter to vcl3 service
 
 
 
